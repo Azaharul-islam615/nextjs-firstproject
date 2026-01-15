@@ -93,7 +93,7 @@ export default function ItemsPage() {
                                 className="group bg-white rounded-2xl shadow-sm overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
                             >
                                 {/* Image Container */}
-                                <div className="relative aspect-square bg-gray-100 overflow-hidden">
+                                <div className="relative h-48 bg-gray-100 overflow-hidden">
                                     <Image
                                         src={item.image}
                                         alt={item.name}
