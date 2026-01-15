@@ -4,7 +4,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:5000';
+// Direct server URL - no environment variable needed
+const API_URL = 'https://server-pi-six-87.vercel.app';
 
 export default function ItemsPage() {
     const [items, setItems] = useState([]);
@@ -58,8 +59,8 @@ export default function ItemsPage() {
                             key={category}
                             onClick={() => setFilter(category)}
                             className={`px-6 py-2.5 rounded-full font-medium transition ${filter === category
-                                    ? 'bg-gray-900 text-white shadow-sm'
-                                    : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200'
+                                ? 'bg-gray-900 text-white shadow-sm'
+                                : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200'
                                 }`}
                         >
                             {category}

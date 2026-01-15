@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:5000';
+// Direct server URL - no environment variable needed
+const API_URL = 'https://server-pi-six-87.vercel.app';
 
 export default function ItemDetailPage() {
     const params = useParams();
