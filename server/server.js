@@ -55,6 +55,54 @@ let items = [
         price: 59.99,
         image: 'https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500',
         category: 'Electronics'
+    },
+    {
+        id: 7,
+        name: 'Bluetooth Speaker',
+        description: 'Portable waterproof speaker with 360-degree sound',
+        price: 129.99,
+        image: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500',
+        category: 'Electronics'
+    },
+    {
+        id: 8,
+        name: 'USB-C Hub',
+        description: '7-in-1 USB-C hub with HDMI, USB 3.0, and SD card reader',
+        price: 45.99,
+        image: 'https://images.unsplash.com/photo-1625948515291-69613efd103f?w=500',
+        category: 'Accessories'
+    },
+    {
+        id: 9,
+        name: 'Webcam HD',
+        description: '1080p HD webcam with auto-focus and built-in microphone',
+        price: 89.99,
+        image: 'https://images.unsplash.com/photo-1614624532983-4ce03382d63d?w=500',
+        category: 'Electronics'
+    },
+    {
+        id: 10,
+        name: 'Phone Stand',
+        description: 'Adjustable aluminum phone stand for desk',
+        price: 24.99,
+        image: 'https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=500',
+        category: 'Accessories'
+    },
+    {
+        id: 11,
+        name: 'Laptop Sleeve',
+        description: 'Premium leather laptop sleeve with magnetic closure',
+        price: 39.99,
+        image: 'https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=500',
+        category: 'Accessories'
+    },
+    {
+        id: 12,
+        name: 'Desk Lamp',
+        description: 'LED desk lamp with adjustable brightness and color temperature',
+        price: 54.99,
+        image: 'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=500',
+        category: 'Home & Living'
     }
 ];
 
