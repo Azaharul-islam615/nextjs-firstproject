@@ -7,14 +7,15 @@ export async function middleware(request) {
         secret: process.env.NEXTAUTH_SECRET || 'your-secret-key-change-in-production'
     });
 
-    const isAuthPage = request.nextUrl.pathname.startsWith('/login');
-    const isProtectedPage = request.nextUrl.pathname.startsWith('/add-item');
+    const pathname = request.nextUrl.pathname;
 
-    if (isProtectedPage && !token) {
+    // Only protect /add-item route
+    if (pathname.startsWith('/add-item') && !token) {
         return NextResponse.redirect(new URL('/login', request.url));
     }
 
-    if (isAuthPage && token) {
+    // If logged in and trying to access login page, redirect to items
+    if (pathname === '/login' && token) {
         return NextResponse.redirect(new URL('/items', request.url));
     }
 
@@ -22,5 +23,5 @@ export async function middleware(request) {
 }
 
 export const config = {
-    matcher: ['/add-item', '/login'],
+    matcher: ['/add-item/:path*', '/login'],
 };
