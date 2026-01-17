@@ -58,10 +58,10 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-20 bg-gray-50">
+      <section id="features" className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Why Choose ShopHub</h2>
+          <div className="text-center mb-10">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">Why Choose ShopHub</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Experience shopping reimagined with our commitment to quality, service, and satisfaction
             </p>
@@ -105,13 +105,13 @@ export default function Home() {
       </section>
 
       {/* Categories Showcase */}
-      <section className="py-20 bg-white">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Shop by Category</h2>
+          <div className="text-center mb-10">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">Shop by Category</h2>
             <p className="text-xl text-gray-600">Find exactly what you&apos;re looking for</p>
           </div>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
             {[
               { name: 'Electronics', icon: '💻', color: 'from-blue-500 to-blue-600', image: 'https://images.unsplash.com/photo-1498049794561-7780e7231661?w=400' },
               { name: 'Accessories', icon: '👜', color: 'from-pink-500 to-pink-600', image: 'https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=400' },
@@ -142,7 +142,7 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
+      <section className="py-16 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
@@ -162,10 +162,10 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">What Our Customers Say</h2>
+          <div className="text-center mb-10">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">What Our Customers Say</h2>
             <p className="text-xl text-gray-600">Real experiences from real people</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -223,11 +223,11 @@ export default function Home() {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-20 bg-white">
+      <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-3xl p-12 md:p-16 text-white shadow-2xl">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Stay in the Loop</h2>
-            <p className="text-xl mb-8 text-blue-100">
+            <h2 className="text-4xl md:text-5xl font-bold mb-2">Stay in the Loop</h2>
+            <p className="text-xl mb-10 text-blue-100">
               Subscribe to get exclusive deals, new arrivals, and insider updates
             </p>
             <div className="max-w-md mx-auto">
@@ -249,8 +249,127 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Process Section - How It Works */}
+      <section className="pb-16 pt-4 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">How It Works</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Simple steps to get your favorite products delivered to your doorstep
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
+            <div className="text-center group border border-gray-300 rounded-lg py-4 px-2">
+              <div className="relative mb-6">
+                <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </div>
+                <div className="absolute -top-6 -right-4 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold text-sm">
+                  1
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Browse Products</h3>
+              <p className="text-gray-600">Explore our curated collection of premium products across various categories</p>
+            </div>
+
+            <div className="text-center group border border-gray-300 rounded-lg py-4 px-2">
+              <div className="relative mb-6">
+                <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5M7 13l2.5 5m6-5v6a2 2 0 01-2 2H9a2 2 0 01-2-2v-6m8 0V9a2 2 0 00-2-2H9a2 2 0 00-2 2v4.01" />
+                  </svg>
+                </div>
+                <div className="absolute -top-6 -right-4 w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center font-bold text-sm">
+                  2
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Add to Cart</h3>
+              <p className="text-gray-600">Select your favorite items and add them to your shopping cart with ease</p>
+            </div>
+
+            <div className="text-center group border border-gray-300 rounded-lg py-4 px-2">
+              <div className="relative mb-6">
+                <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+                <div className="absolute -top-6 -right-4 w-8 h-8 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center font-bold text-sm">
+                  3
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Secure Payment</h3>
+              <p className="text-gray-600">Complete your purchase with our secure and encrypted payment system</p>
+            </div>
+
+            <div className="text-center group border border-gray-300 rounded-lg py-4 px-2">
+              <div className="relative mb-6">
+                <div className="w-20 h-20 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                  </svg>
+                </div>
+                <div className="absolute -top-6 -right-4 w-8 h-8 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center font-bold text-sm">
+                  4
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Fast Delivery</h3>
+              <p className="text-gray-600">Receive your products quickly with our reliable delivery service</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Brand Partners Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">Trusted by Leading Brands</h2>
+            <p className="text-xl text-gray-600">We partner with the world&apos;s most innovative companies</p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-8 items-center">
+            {[
+              { name: 'Apple', logo: '🍎' },
+              { name: 'Samsung', logo: '📱' },
+              { name: 'Sony', logo: '🎧' },
+              { name: 'Nike', logo: '👟' },
+              { name: 'Adidas', logo: '⚽' },
+              { name: 'Canon', logo: '📷' }
+            ].map((brand, idx) => (
+              <div key={idx} className="group text-center">
+                <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2">
+                  <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-300">
+                    {brand.logo}
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-900">{brand.name}</h3>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-12 text-center text-white">
+            <h3 className="text-3xl font-bold mb-4">Want to Partner With Us?</h3>
+            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+              Join our network of premium brands and reach millions of customers worldwide
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                Become a Partner
+              </button>
+              <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
-      <section className="py-20 bg-gray-900 text-white">
+      <section className="py-16 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Start Shopping?</h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
